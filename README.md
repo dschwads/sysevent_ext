@@ -33,6 +33,9 @@ Create Hardlink Over Sensitive Files
 Diamorphine Rootkit Activity
 Execute Eicar malware
 
-Configuration
+Configuration and Deployment:
 Create the following deployment. Make sure the namespace sysevent exists. The environment variables minsleep and maxsleep can be omitted. They will default to 1800 and 7200 seconds respectively.
 In case you want to use the generator only in manual mode use the environment variable pauseonstart value true to disable automatic event generation (default false)
+
+Create kubernetes namespace called sysevent
+kubectl apply -n sysevent -f <path to yaml>
